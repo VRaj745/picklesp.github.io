@@ -1,19 +1,115 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lasya Pickles</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; background: #fffdee; }
-    h1 { color: #a0522d; }
-    button { padding: 10px 20px; font-size: 16px; }
+    body {
+      margin: 0;
+      font-family: 'Raleway', sans-serif;
+      background: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ffb703;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .container {
+      padding: 2rem;
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+    .card {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .card h3 {
+      margin: 0.8rem 0 0.4rem;
+      font-size: 1.2rem;
+      color: #e76f51;
+    }
+    .card p {
+      font-size: 0.95rem;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #219ebc;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #126782;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background-color: #fefae0;
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome to Lasya Pickles!</h1>
-  <p>Homemade pickles delivered fresh to your door.</p>
-  <button onclick="window.location='mailto:order@lasyapickles.store'">Order Now</button>
+
+<header>Lasya Pickles</header>
+
+<main class="container">
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200.png?text=Mango+Pickle" alt="Mango Pickle">
+    <h3>Mango Pickle</h3>
+    <p>Traditional Andhra style mango pickle made with love and handpicked spices.</p>
+    <a href="tel:+919999999999" class="btn">Call Now</a>
+  </div>
+  <div class="card">
+    <img src="https://via.placeholder.com/300x200.png?text=Lemon+Pickle" alt="Lemon Pickle">
+    <h3>Lemon Pickle</h3>
+    <p>Sweet and tangy lemon pickle with a spicy twist for every meal.</p>
+    <a href="https://wa.me/919999999999" class="btn" target="_blank">Order Now</a>
+  </div>
+  <!-- Add more products as needed -->
+</main>
+
+<a href="https://wa.me/919999999999" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  💬
+</a>
+
+<footer>© 2025 Lasya Pickles. All rights reserved.</footer>
+
 </body>
 </html>
